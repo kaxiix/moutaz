@@ -60,7 +60,6 @@ export default function MoleAssessment() {
   return (
     <div className="w-full max-w-md mx-auto mt-20 p-4 bg-white shadow-lg rounded-lg">
       <h2 className="text-2xl font-bold text-center mb-4">Mole Assessment</h2>
-
       {/* Image placeholder and upload button */}
       <div className="flex flex-col items-center mb-4">
         {image ? (
@@ -88,7 +87,6 @@ export default function MoleAssessment() {
           className="hidden"
         />
       </div>
-
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Form fields for asymmetry, border, color, and diameter */}
         {/* Asymmetry */}
@@ -186,7 +184,6 @@ export default function MoleAssessment() {
           Analyze
         </button>
       </form>
-
       {/* Display result formatted */}
       {result && (
         <div className="mt-6 p-4 bg-gray-100 rounded-md border border-gray-300">
@@ -199,7 +196,6 @@ export default function MoleAssessment() {
           </p>
         </div>
       )}
-
       {/* Display raw response if JSON parsing fails */}
       {rawResponse && (
         <div className="mt-6 p-4 bg-yellow-100 rounded-md">
@@ -207,9 +203,9 @@ export default function MoleAssessment() {
           <pre className="whitespace-pre-wrap">{rawResponse}</pre>
         </div>
       )}
-
       {/* Display error message */}
       {error && <p className="text-red-500 mt-4">{error}</p>}
+      random text
     </div>
   );
 }
